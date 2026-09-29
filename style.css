@@ -9,20 +9,7 @@
   --accent-contrast: #ffffff;
   --accent-soft: #ecebfc;
   --radius: 14px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1015;
-    --bg-alt: #16171e;
-    --surface: #1c1d26;
-    --text: #ecedf2;
-    --muted: #a0a3b1;
-    --border: #2b2d3a;
-    --accent: #9d93ff;
-    --accent-contrast: #0f1015;
-    --accent-soft: #25224a;
-  }
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -64,6 +51,10 @@ section.alt { background: var(--bg-alt); }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .logo { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; letter-spacing: -.02em; }
 .logo span { color: var(--accent); margin-left: 2px; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.uni-logo { display: flex; align-items: center; }
+.uni-logo img { height: 36px; width: auto; display: block; }
+.brand-divider { width: 1px; height: 28px; background: var(--border); }
 .nav nav { display: flex; align-items: center; gap: 24px; }
 .nav nav a:not(.btn) { color: var(--muted); text-decoration: none; font-size: .95rem; font-weight: 500; }
 .nav nav a:not(.btn):hover { color: var(--text); }
