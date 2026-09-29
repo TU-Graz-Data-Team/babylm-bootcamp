@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BabyLM Bootcamp</title>
+  <meta name="description" content="A four-month bootcamp preparing student teams to compete in the BabyLM Challenge on sample-efficient language model pretraining.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍼</text></svg>">
+</head>
+<body>
+  <!-- TODO: Replace every [BRACKETED] placeholder with real details. -->
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">BabyLM<span>Bootcamp</span></a>
+      <nav>
+        <a href="#challenge">The challenge</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#faq">FAQ</a>
+        <a href="#register" class="btn btn-small">Apply</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">[Data Team] presents</p>
+        <h1>BabyLM Bootcamp</h1>
+        <p class="lead">Learn how to build language models the way children learn language: from a small amount of data. Over four months we'll get you ready to compete as a team in the <a href="https://babylm.github.io/">BabyLM Challenge</a> and to write up your results as a research paper.</p>
+        <ul class="meta">
+          <li><strong>Bootcamp</strong>November 2026 – February 2027</li>
+          <li><strong>Competition</strong>February – July 2027</li>
+          <li><strong>Format</strong>[Weekly sessions · Venue / Online]</li>
+        </ul>
+        <div class="cta">
+          <a href="#register" class="btn">Apply now</a>
+          <a href="#roadmap" class="btn btn-ghost">See the roadmap</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2>What is BabyLM?</h2>
+            <p>The <a href="https://babylm.github.io/">BabyLM Challenge</a> is a shared task and workshop on <em>sample-efficient pretraining on a developmentally plausible corpus</em>. Today's language models see trillions of words. A child hears fewer than 100 million words by age 13. BabyLM asks how well a model can do with a budget that small.</p>
+            <p>Teams train their own models from scratch within a fixed data budget, run them through a shared evaluation pipeline, and describe their approach in a paper for the BabyLM workshop, which is co-located with a major NLP conference (EMNLP in 2026).</p>
+          </div>
+          <div>
+            <h3 class="small-heading">Tracks in the 2026 edition</h3>
+            <div class="tracks">
+              <div class="track">
+                <span class="badge">100M words</span>
+                <h3>Strict</h3>
+                <p>Train on a dataset of up to 100M words. You can use the official corpus or build your own.</p>
+              </div>
+              <div class="track">
+                <span class="badge">10M words</span>
+                <h3>Strict-Small</h3>
+                <p>The same idea with ten times less data. A good fit for student compute budgets.</p>
+              </div>
+              <div class="track">
+                <span class="badge">100M tokens</span>
+                <h3>Multilingual</h3>
+                <p>Based on BabyBabelLM, covering English, Dutch and Chinese.</p>
+              </div>
+            </div>
+            <p class="note">Tracks and rules can change from year to year. We'll update this page once the 2027 call for papers comes out.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="alt">
+      <div class="container">
+        <h2>Roadmap</h2>
+        <p class="section-lead">Two phases: first we learn the tools, then we compete.</p>
+
+        <div class="phases">
+          <article class="phase">
+            <p class="phase-label">Phase 1 · Nov 2026 – Feb 2027</p>
+            <h3>Bootcamp</h3>
+            <p>Weekly lectures, hands-on labs and paper-reading sessions. You'll train small language models from scratch, work with the BabyLM data and evaluation pipeline, and form a team with a research idea.</p>
+            <ul class="checklist">
+              <li>Transformer and LM training fundamentals</li>
+              <li>Reproduce a BabyLM baseline</li>
+              <li>Study past winning approaches</li>
+              <li>Pitch a project and form a team</li>
+            </ul>
+          </article>
+          <article class="phase phase-accent">
+            <p class="phase-label">Phase 2 · Feb – Jul 2027</p>
+            <h3>Competition</h3>
+            <p>Teams work on their BabyLM submission with support from mentors: regular check-ins, shared compute and feedback on the paper.</p>
+            <ul class="checklist">
+              <li>Run experiments within the data budget</li>
+              <li>Evaluate on the official pipeline</li>
+              <li>Write and submit a workshop paper</li>
+              <li>Submit to the leaderboard</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum">
+      <div class="container">
+        <h2>Bootcamp curriculum</h2>
+        <p class="section-lead">One block per month. Every week has a lecture, a lab and a reading-group session. [Day, time, timezone].</p>
+
+        <div class="months">
+          <article class="month">
+            <p class="month-label">November</p>
+            <h3>Foundations</h3>
+            <ul>
+              <li>Language modeling objectives: causal vs. masked LMs</li>
+              <li>Tokenization and the transformer architecture</li>
+              <li>Training a small LM from scratch with Hugging Face Transformers</li>
+              <li>Lab: train your first model on a 10M-word corpus</li>
+            </ul>
+          </article>
+          <article class="month">
+            <p class="month-label">December</p>
+            <h3>Data &amp; sample efficiency</h3>
+            <ul>
+              <li>The BabyLM corpora: child-directed speech, children's books, dialogue</li>
+              <li>Data budgets, data curation and curriculum learning</li>
+              <li>Architectures and objectives built for little data</li>
+              <li>Reading group: strong submissions from past BabyLM editions</li>
+            </ul>
+          </article>
+          <article class="month">
+            <p class="month-label">January</p>
+            <h3>Evaluation</h3>
+            <ul>
+              <li>Targeted syntactic evaluation (BLiMP-style minimal pairs)</li>
+              <li>World knowledge, fine-tuning tasks and cognitively inspired benchmarks</li>
+              <li>Running the official <a href="https://github.com/babylm-org/babylm-eval">BabyLM evaluation pipeline</a></li>
+              <li>Experimental design: baselines, ablations, seeds, compute budgets</li>
+            </ul>
+          </article>
+          <article class="month">
+            <p class="month-label">February</p>
+            <h3>From idea to project</h3>
+            <ul>
+              <li>Coming up with and scoping a research question</li>
+              <li>Writing a research paper in the ACL format</li>
+              <li>Project pitches and team formation</li>
+              <li>Competition kickoff 🚀</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <h2>Competition phase milestones</h2>
+        <p class="section-lead">Internal milestones for our teams. Official BabyLM deadlines will be added once they're announced for 2027.</p>
+        <ul class="timeline">
+          <li><time>Feb</time><div><strong>Kickoff</strong><p>Teams finalize their research proposals and get compute access.</p></div></li>
+          <li><time>Mar</time><div><strong>Baseline</strong><p>Every team has a working training and evaluation setup, with baseline results.</p></div></li>
+          <li><time>Apr–May</time><div><strong>Experiments</strong><p>Main experiments and ablations, with a mentor check-in every two weeks.</p></div></li>
+          <li><time>Jun</time><div><strong>Writing</strong><p>Draft the paper and get internal peer review from the other teams and the mentors.</p></div></li>
+          <li><time>Jul</time><div><strong>Submission</strong><p>Final paper and models submitted to BabyLM. 🎉</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="mentors">
+      <div class="container">
+        <h2>Organizers &amp; mentors</h2>
+        <div class="grid speakers">
+          <article class="speaker">
+            <div class="avatar">AB</div>
+            <h3>[Name Surname]</h3>
+            <p class="role">[Role, Organization]</p>
+            <p>[Research interests / what they'll teach.]</p>
+          </article>
+          <article class="speaker">
+            <div class="avatar">CD</div>
+            <h3>[Name Surname]</h3>
+            <p class="role">[Role, Organization]</p>
+            <p>[Research interests / what they'll teach.]</p>
+          </article>
+          <article class="speaker">
+            <div class="avatar">EF</div>
+            <h3>[Name Surname]</h3>
+            <p class="role">[Role, Organization]</p>
+            <p>[Research interests / what they'll teach.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container two-col">
+        <div>
+          <h2>Who it's for</h2>
+          <p>Bachelor's and master's students who want real research experience in NLP. By the end, you'll have trained language models from scratch, run a proper experimental study, and, we hope, co-authored a workshop paper.</p>
+        </div>
+        <div>
+          <h2>Prerequisites</h2>
+          <ul class="checklist">
+            <li>Comfortable with Python</li>
+            <li>Basic machine learning, linear algebra and probability</li>
+            <li>Some PyTorch experience (helpful, not required)</li>
+            <li>Able to commit about [N] hours a week, November to July</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container narrow">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Do I have to take part in the competition?</summary>
+          <p>The bootcamp is designed to lead into the competition, and we strongly encourage everyone to stay for Phase 2. [Policy for bootcamp-only participants.]</p>
+        </details>
+        <details>
+          <summary>How are teams formed?</summary>
+          <p>Teams of [2–4] people form in February, around the project ideas pitched at the end of the bootcamp. Each team is paired with a mentor.</p>
+        </details>
+        <details>
+          <summary>Do I need my own GPU?</summary>
+          <p>No. BabyLM models are small by design, and we'll provide [compute resources] for labs and competition experiments.</p>
+        </details>
+        <details>
+          <summary>Is it free?</summary>
+          <p>[Yes / fee details.]</p>
+        </details>
+        <details>
+          <summary>Will sessions be recorded?</summary>
+          <p>[Recording policy.]</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="resources" class="alt">
+      <div class="container">
+        <h2>BabyLM resources</h2>
+        <div class="grid links">
+          <a class="card link-card" href="https://babylm.github.io/">
+            <h3>Official website →</h3>
+            <p>Call for papers, timeline and past editions.</p>
+          </a>
+          <a class="card link-card" href="https://babylm.github.io/guidelines.html">
+            <h3>Guidelines →</h3>
+            <p>Track rules, data budgets and submission requirements.</p>
+          </a>
+          <a class="card link-card" href="https://huggingface.co/BabyLM-community">
+            <h3>Datasets →</h3>
+            <p>Official training corpora on Hugging Face.</p>
+          </a>
+          <a class="card link-card" href="https://github.com/babylm-org/babylm-eval">
+            <h3>Evaluation pipeline →</h3>
+            <p>The official evaluation code on GitHub.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="register">
+      <div class="container narrow center">
+        <h2>Apply</h2>
+        <p>We have [N] places. Applications close on [deadline, October 2026].</p>
+        <a href="[APPLICATION_FORM_URL]" class="btn">Apply to the bootcamp</a>
+        <p class="contact">Questions? Write to <a href="mailto:[contact@example.com]">[contact@example.com]</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 [Data Team]. This is an independent preparation program and isn't affiliated with the BabyLM Challenge organizers.</p>
+    </div>
+  </footer>
+</body>
+</html>
